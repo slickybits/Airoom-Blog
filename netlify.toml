@@ -1,6 +1,6 @@
 [build]
   command = "gatsby build --prefix-paths"
-  publish = "public/"
+  publish = "blog/public/"
 
 [template]
   incoming-hooks = ["Ghost"]
