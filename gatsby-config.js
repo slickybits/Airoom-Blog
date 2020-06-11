@@ -29,7 +29,9 @@ try {
 * Further info 👉🏼 https://www.gatsbyjs.org/docs/gatsby-config/
 *
 */
+  
 module.exports = {
+    pathPrefix: `/blog`,
     siteMetadata: {
         siteUrl: config.siteUrl,
     },
