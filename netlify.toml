@@ -1,6 +1,13 @@
 [build]
-  command = "gatsby build"
+  command = "gatsby build --prefix-paths"
   publish = "public/"
 
 [template]
   incoming-hooks = ["Ghost"]
+
+[[redirects]]
+  from = "/blog/"
+  to = "/"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}

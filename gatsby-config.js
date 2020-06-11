@@ -31,6 +31,7 @@ try {
 */
   
 module.exports = {
+    pathPrefix: `/blog`,
     siteMetadata: {
         siteUrl: config.siteUrl,
     },
@@ -70,7 +71,7 @@ module.exports = {
             resolve: `gatsby-plugin-ghost-manifest`,
             options: {
                 short_name: config.shortTitle,
-                start_url: `/`,
+                start_url: `/blog`,
                 background_color: config.backgroundColor,
                 theme_color: config.themeColor,
                 display: `minimal-ui`,
