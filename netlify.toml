@@ -4,3 +4,10 @@
 
 [template]
   incoming-hooks = ["Ghost"]
+
+[[redirects]]
+  from = "/*"
+  to = "/blog"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
