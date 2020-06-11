@@ -8,7 +8,7 @@ import { Navigation } from '.'
 import MainNav from './MainNav'
 import config from '../../utils/siteConfig'
 // import MainNavItems from '../../data/main-nav.json'
-import SingleBackgroundImage from '../../images/bg_single.png'
+// import SingleBackgroundImage from '../../images/bg_single.png'
 
 // Styles
 import '../../styles/app.css'
@@ -97,9 +97,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 {
                                     isHome &&
                                     <div className="site-nav-right">
-                                        {site.twitter && <a href={twitterUrl} className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
-                                        {site.facebook && <a href={facebookUrl} className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>}
-                                        <a className="site-nav-item" href={`https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/`} target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a>
+                                        {site.twitter && <a href={twitterUrl} className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="blog/images/icons/twitter.svg" alt="Twitter" /></a>}
+                                        {site.facebook && <a href={facebookUrl} className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="blog/images/icons/facebook.svg" alt="Facebook" /></a>}
+                                        <a className="site-nav-item" href={`https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/`} target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="blog/images/icons/rss.svg" alt="RSS Feed" /></a>
                                     </div>
                                 }
 
